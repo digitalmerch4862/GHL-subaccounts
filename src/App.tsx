@@ -7,7 +7,6 @@ import { ValueStack } from './components/ValueStack';
 import { WhyUs } from './components/WhyUs';
 import { FAQ } from './components/FAQ';
 import { Testimonials } from './components/Testimonials';
-import { Chatbot } from './components/Chatbot';
 
 export default function App() {
   return (
@@ -39,8 +38,6 @@ export default function App() {
           </p>
         </div>
       </footer>
-
-      <Chatbot />
     </div>
   );
 }
