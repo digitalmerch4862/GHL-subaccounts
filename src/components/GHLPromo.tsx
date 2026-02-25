@@ -62,9 +62,11 @@ export const GHLPromo = () => {
               <ArrowRight className="w-7 h-7 group-hover:translate-x-1 transition-transform" />
             </motion.a>
 
-            <p className="mt-5 text-gray-500 text-sm font-mono">
-              No lock-in. Cancel anytime during the trial period.
-            </p>
+            <div className="mt-5 space-y-1 font-mono">
+              <p className="text-base text-gray-300">Starting at ₱599/month</p>
+              <p className="text-2xl font-bold text-neon-cyan">Best Value: ₱4,999/year</p>
+              <p className="text-xs text-gray-500">No lock-in. Cancel anytime during trial.</p>
+            </div>
           </div>
 
           <div className="bg-cyber-gray/70 border border-neon-cyan/20 rounded-2xl p-7">
