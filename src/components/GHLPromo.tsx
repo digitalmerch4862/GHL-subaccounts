@@ -50,7 +50,7 @@ export const GHLPromo = () => {
             </div>
 
             <motion.a
-              href="https://www.gohighlevel.com/?fp_ref=digitalmerchs"
+              href="https://dmerch-portal.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.03 }}
@@ -58,7 +58,7 @@ export const GHLPromo = () => {
               className="inline-flex items-center gap-3 bg-gradient-to-r from-neon-purple to-neon-pink text-white font-black text-xl md:text-2xl px-10 py-5 rounded-xl shadow-[0_0_35px_rgba(188,19,254,0.4)] hover:shadow-[0_0_50px_rgba(188,19,254,0.6)] transition-all group"
             >
               <Rocket className="w-7 h-7" />
-              <span>CLAIM 30-DAY FREE TRIAL</span>
+              <span>BEST VALUE: ₱4,999/YEAR</span>
               <ArrowRight className="w-7 h-7 group-hover:translate-x-1 transition-transform" />
             </motion.a>
 

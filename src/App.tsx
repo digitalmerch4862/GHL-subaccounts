@@ -11,6 +11,7 @@ import { LeadCapture } from './components/LeadCapture';
 import { CustomCursor } from './components/CustomCursor';
 import { GHLPromo } from './components/GHLPromo';
 import { LiveNotifications } from './components/LiveNotifications';
+import { Facebook, Instagram, Youtube } from 'lucide-react';
 
 export default function App() {
   return (
@@ -23,12 +24,12 @@ export default function App() {
             DIGITAL<span className="text-neon-cyan">MERCH</span>
           </div>
           <a
-            href="https://www.gohighlevel.com/?fp_ref=digitalmerchs"
+            href="https://dmerch-portal.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-black font-bold px-4 py-2 text-sm clip-path-slant hover:bg-neon-cyan transition-colors"
           >
-            START FREE TRIAL
+            AVAIL NOW
           </a>
         </div>
       </nav>
@@ -42,6 +43,43 @@ export default function App() {
         <FAQ />
         <LeadCapture />
       </main>
+
+      <section className="py-8 border-t border-neon-cyan/20 bg-cyber-black">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="font-mono text-sm text-gray-300 tracking-wide">FOLLOW DIGITALMERCH OFFICIAL</p>
+            <div className="flex items-center gap-3">
+              <a
+                href="https://www.facebook.com/digitalmerch4862/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="DigitalMerch Facebook"
+                className="p-3 rounded-full border border-neon-cyan/40 text-neon-cyan hover:bg-neon-cyan hover:text-black transition-colors"
+              >
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a
+                href="https://youtube.com/@digitalmerch-sy7yt?si=c8VCo5afd47Rf5Df"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="DigitalMerch YouTube"
+                className="p-3 rounded-full border border-neon-cyan/40 text-neon-cyan hover:bg-neon-cyan hover:text-black transition-colors"
+              >
+                <Youtube className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.instagram.com/digitalmerch4862/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="DigitalMerch Instagram"
+                className="p-3 rounded-full border border-neon-cyan/40 text-neon-cyan hover:bg-neon-cyan hover:text-black transition-colors"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <footer className="py-10 bg-black border-t border-gray-900 text-center">
         <div className="container mx-auto px-4">
