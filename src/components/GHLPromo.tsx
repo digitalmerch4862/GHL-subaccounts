@@ -62,11 +62,7 @@ export const GHLPromo = () => {
               <ArrowRight className="w-7 h-7 group-hover:translate-x-1 transition-transform" />
             </motion.a>
 
-            <div className="mt-5 space-y-1 font-mono">
-              <p className="text-base text-gray-300">Starting at ₱599/month</p>
-              <p className="text-2xl font-bold text-neon-cyan">Best Value: ₱4,999/year</p>
-              <p className="text-xs text-gray-500">No lock-in. Cancel anytime during trial.</p>
-            </div>
+            <p className="mt-5 text-gray-500 text-sm font-mono">No lock-in. Cancel anytime during trial.</p>
           </div>
 
           <div className="bg-cyber-gray/70 border border-neon-cyan/20 rounded-2xl p-7">
@@ -90,10 +86,11 @@ export const GHLPromo = () => {
               </div>
             </div>
 
-            <p className="mt-6 text-sm text-gray-400 leading-relaxed">
-              Trial access is provided through our verified partner link to help you test fit before scaling.
-              If you continue, we can help you configure subaccounts, snapshots, and core automations.
-            </p>
+            <div className="mt-6 space-y-1 font-mono">
+              <p className="text-base text-gray-300">Starting at ₱599/month</p>
+              <p className="text-2xl font-bold text-neon-cyan">Best Value: ₱4,999/year</p>
+              <p className="text-xs text-gray-500">Cancel anytime. Upgrade only when ready.</p>
+            </div>
           </div>
         </div>
       </div>
