@@ -82,15 +82,24 @@ export const ValueStack = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -5 }}
-              className={`bg-cyber-gray p-6 border-l-4 ${feature.color} relative overflow-hidden group`}
+              whileHover={{ 
+                y: -10,
+                rotateX: 5,
+                rotateY: 5,
+                scale: 1.02,
+                boxShadow: "0 0 20px rgba(0, 255, 255, 0.2)"
+              }}
+              className={`bg-cyber-gray p-6 border-l-4 ${feature.color} relative overflow-hidden group perspective-1000 transform-gpu transition-all duration-300`}
             >
-              <div className="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-20 transition-opacity">
+              <div className="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-20 transition-opacity duration-300 group-hover:scale-110">
                 {feature.icon}
               </div>
-              <div className="mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-bold mb-2 text-white font-display tracking-wide">{feature.title}</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">{feature.desc}</p>
+              <div className="mb-4 group-hover:text-white transition-colors duration-300">{feature.icon}</div>
+              <h3 className="text-xl font-bold mb-2 text-white font-display tracking-wide group-hover:text-neon-cyan transition-colors duration-300">{feature.title}</h3>
+              <p className="text-gray-400 text-sm leading-relaxed group-hover:text-gray-200 transition-colors duration-300">{feature.desc}</p>
+              
+              {/* Scanline effect on hover */}
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-transparent -translate-y-full group-hover:translate-y-full transition-transform duration-1000 pointer-events-none"></div>
             </motion.div>
           ))}
         </div>

@@ -1,12 +1,16 @@
 import { motion } from 'motion/react';
 import { GlitchText } from './GlitchText';
 import { ChevronRight, Zap } from 'lucide-react';
+import { DigitalRain } from './DigitalRain';
 
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-10">
-      {/* Grid Background */}
-      <div className="absolute inset-0 z-0 opacity-20 pointer-events-none" 
+      {/* Digital Rain Background */}
+      <DigitalRain />
+      
+      {/* Grid Background Overlay */}
+      <div className="absolute inset-0 z-0 opacity-10 pointer-events-none" 
            style={{
              backgroundImage: 'linear-gradient(var(--color-neon-cyan) 1px, transparent 1px), linear-gradient(90deg, var(--color-neon-cyan) 1px, transparent 1px)',
              backgroundSize: '40px 40px',

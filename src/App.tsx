@@ -7,10 +7,16 @@ import { ValueStack } from './components/ValueStack';
 import { WhyUs } from './components/WhyUs';
 import { FAQ } from './components/FAQ';
 import { Testimonials } from './components/Testimonials';
+import { LeadCapture } from './components/LeadCapture';
+import { CustomCursor } from './components/CustomCursor';
+import { GHLPromo } from './components/GHLPromo';
+import { LiveNotifications } from './components/LiveNotifications';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-cyber-black text-white selection:bg-neon-pink selection:text-white">
+    <div className="min-h-screen bg-cyber-black text-white selection:bg-neon-pink selection:text-white cursor-none">
+      <CustomCursor />
+      <LiveNotifications />
       <nav className="fixed top-0 left-0 w-full z-50 bg-cyber-black/80 backdrop-blur-md border-b border-white/10">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="text-2xl font-display font-bold tracking-tighter">
@@ -27,7 +33,9 @@ export default function App() {
         <ValueStack />
         <WhyUs />
         <Testimonials />
+        <GHLPromo />
         <FAQ />
+        <LeadCapture />
       </main>
 
       <footer className="py-10 bg-black border-t border-gray-900 text-center">
