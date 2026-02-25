@@ -22,7 +22,6 @@ export const GHLPromo = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           <div>
             <h2 className="text-4xl md:text-6xl font-black mb-6 text-white leading-tight">
-              Upsell with a
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan to-neon-purple">
                 Go High Level Subaccount
               </span>

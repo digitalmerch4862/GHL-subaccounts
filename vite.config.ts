@@ -20,8 +20,8 @@ export default defineConfig(({mode}) => {
           'icon.png',
         ],
         manifest: {
-          name: 'DigitalMerch PH',
-          short_name: 'DigitalMerch',
+          name: 'DMerch|GHLSubAccount',
+          short_name: 'DMerch',
           description: 'Gemini Advanced + 2TB Storage + YouTube Premium bundle.',
           theme_color: '#050505',
           background_color: '#050505',
